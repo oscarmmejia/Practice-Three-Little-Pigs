@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+:root {
+    
+    --bg-color: #fdfbf7;        
+    --text-color: #333a42;      
+    --primary-color: #ff6b6b;   
+    --secondary-color: #4dadf7; 
+    --accent-color: #ffd43b;    
+    --border-radius: 20px;      
+}
+
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+header, main, footer {
+    width: 100%;
+    max-width: 720px;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+
+header {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+header h2 {
+    font-size: 1.4rem;
+    color: var(--secondary-color);
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+header h3, header h4 {
+    font-size: 1.05rem;
+    color: #788896;
+    font-weight: 400;
+    margin: 6px 0;
+}
+
+
+hr {
+    border: none;
+    border-top: 5px dashed #e2e8f0;
+    width: 100%;
+    max-width: 720px;
+    margin: 40px auto;
+}
+
+
+article p {
+    font-size: 1.3rem;
+    margin-bottom: 28px;
+    text-align: left;
+}
+
+
+article div {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #4a5568;
+    padding: 10px 20px;
+    margin: 24px 0;
+    background-color: rgba(255, 212, 59, 0.15);
+    border-left: 5px solid var(--accent-color);
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 40px auto;
+    border-radius: var(--border-radius);
+    background-color: #ffffff;
+    border: 6px solid #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); 
+    transition: transform 0.3s ease;
+}
+
+
+img:hover {
+    transform: scale(1.02);
+}
+
+
+footer {
+    text-align: center;
+    padding: 50px 0 60px 0;
+    font-size: 1.1rem;
+    color: #a0aec0;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
